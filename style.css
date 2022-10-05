@@ -1,0 +1,163 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family:"Overpass" ;
+    width: 1440px;
+}
+
+@font-face {
+    font-family: "Overpass";
+    src: url("./Overpass-VariableFont_wght.ttf");
+}
+
+main {
+    background-color:  hsl(213, 19%, 18%);
+    border-radius: 5%;
+    width: 400px;
+    text-align: left;
+    align-items: center;
+    margin: 200px 400px 200px 500px;
+    padding-left: 35px;
+    padding-top:  80px;
+    padding-right: 35px;
+}
+
+header {
+  left: 34%;
+  top: 28%;
+  position: absolute;
+  padding-top: 14px;
+  padding-left: 17px; 
+  background-color: hsl(205, 11%, 22%);
+  background-position: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 35px;
+} /* asi le coloco un fondo a una imagen.. se diseña coo background
+     y las propiedad stilizan es el background */
+
+
+.up h1 {
+    color: hsl(0, 0%, 100%);
+    letter-spacing:0.1mm;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: xx-large;
+}
+
+.up p {
+    color: hsl(217, 12%, 63%);
+    letter-spacing:0.1mm;
+    line-height: 6mm;
+    padding-right: 30px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.num {
+  display:flex;
+  justify-content: space-around;
+  padding: 20px 15px 20px 0px;
+}
+
+.num button  {
+   background-color: hsl(205, 11%, 22%); 
+   border: none;
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   color:  hsl(217, 12%, 63%);
+   border: none;
+   font-weight: 700;
+   font-size: larger;
+   
+} 
+
+.num button:hover {
+  cursor: url("./pointer.png"), auto; /* asi coloco un pointer externo */
+  background-color:  hsl(25, 97%, 53%) ;
+} /* cuando el cursor esta encima del boton */
+
+.num button:checked{
+  background-color: hsl(217, 12%, 63%) ;
+}
+
+
+.sub {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  justify-content: space-around;
+}
+
+.sub button {
+    background-color: hsl(25, 97%, 53%);
+    width: 370px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 0.4mm;
+}
+
+.sub button:hover {
+  cursor: url("./pointer.png"), auto; 
+  background-color:  hsl(0, 0%, 100%) ;
+  text-shadow: 140px 0px 1px hsl(25, 97%, 53%); /* valores: 1 hori 1 vert 3 radius*/
+  text-align:left;
+} /* con text shadow y text align pongo el texto sore el background color*/
+
+
+.message {
+  position: absolute;
+  background-color:hsl(213, 19%, 18%);
+  width: 300px;
+  align-items: center;
+  text-align: center;
+  left: 500px ;
+  top: 300px;
+  padding: 30px 40px 20px 30px;
+}
+
+.message h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+
+}
+
+.message h1 {
+  font-weight:bold;
+  background-color: hsl(218, 7%, 22%) ;
+  background-position:center;
+  border-radius: 30px ;
+  background-size: cover;
+  color: hsl(25, 97%, 53%);
+  align-items: center;
+  height: 25px;
+  font-size: 20px;
+}
+
+.message p {
+  color:  hsl(217, 12%, 63%);
+  font-weight: 400;
+}
+
+
+@media (max-width: 375px ) {
+   
+  main {
+  width: 300px;
+  margin: 200px 15px 200px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
+  .message {
+    left: 0px ;
+    top: 300px;
+    padding: 30px 20px 20px 20px;
+  }
+
+}
